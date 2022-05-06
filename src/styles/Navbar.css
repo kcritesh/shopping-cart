@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #ba74ff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins);
+}
+
+.navitems {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navitems .title {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart-section {
+    position: relative;
+}
+
+.cart-section i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.cart-section span:nth-child(2) {
+    font-size: 17px;
+    position: absolute;
+    right: -13px;
+    top: -7px;
+    border-radius: 13px;
+    padding: 0px 7px;
+    background-color: red;
+}
