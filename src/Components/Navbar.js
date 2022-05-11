@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
 
-export default function Navbar({ setShow, size }) {
+export default function Navbar({ setShow, size, cartHash }) {
   return (
     <>
       <div className="navbar">
@@ -15,13 +16,10 @@ export default function Navbar({ setShow, size }) {
             Hello Store
           </h2>
           <div className="cart-section">
-            <span
-              onClick={() => {
-                setShow(false);
-              }}
-            >
+            <Link to={`/cart/${cartHash}`}>
               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-            </span>
+            </Link>
+
             <span>{size}</span>
           </div>
         </div>

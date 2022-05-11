@@ -4,6 +4,8 @@ import "../styles/cart.css";
 export default function Cart({ cart, setCart, handleChange }) {
   // const { title, author, img, amount } = cart;
   const [price, setPrice] = useState(0);
+  // const newCartHash = JSON.parse(cartHash);
+  // console.log(newCartHash);
 
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);
@@ -44,6 +46,7 @@ export default function Cart({ cart, setCart, handleChange }) {
           <span>Total Price of your Cart</span>
           <span>Rs - {price}</span>
         </div>
+        <div className="sharecart"></div>
       </article>
     </>
   );
